@@ -8,6 +8,17 @@ account during this operation. Source push verification is recorded separately.
 The upload result is recorded after the actual remote operation; the repository
 URL by itself is not evidence of a successful push.
 
+## Verified Source Upload
+- Public repository creation succeeded through the authenticated HongyuLeo account.
+- Initial source commit: beffa9b (Publish YuSpeak development preview source and GitHub AI handoff).
+- `git push -u origin main` succeeded; the remote main branch was created.
+- 67 tracked files uploaded: source, tests, build/CI files, necessary documents,
+  license, real screenshots and earlier local test/build evidence.
+- Local regression tests rerun for this upload: 17 passed, 0 failed.
+- No EXE, DLL, ZIP, model weights, recordings, databases or build caches were committed.
+- No Release or v0.1.0 tag was created. GitHub Actions results must be checked
+  separately; local test success is not a claim that remote CI passed.
+
 ## Binary Release: Deferred
 No v0.1.0 tag or binary Pre-release is being created in this upload operation.
 The local portable ZIP exists and its extracted EXE passed GUI startup smoke.
