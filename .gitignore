@@ -1,0 +1,16 @@
+.venv/
+build/
+dist/
+release/*.zip
+__pycache__/
+*.pyc
+benchmark-results.json
+models/
+*.wav
+*.sqlite3
+.git/
+work/
+*.part
+*.argosmodel
+*.log
+!release/build.log

@@ -1,0 +1,26 @@
+{
+  "mode": "native_windows_smoke",
+  "microphone_verified": false,
+  "loopback_verified": true,
+  "ui_pages": [
+    "zh-workspace",
+    "zh-captions",
+    "zh-models",
+    "zh-history",
+    "zh-settings",
+    "en-workspace",
+    "en-captions",
+    "en-models",
+    "en-history",
+    "en-settings"
+  ],
+  "loopback_devices": 7,
+  "microphone_devices": 14,
+  "captured_blocks": 148,
+  "device_events": [
+    [
+      "device",
+      "扬声器 (High Definition Audio Device) [Loopback]"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+PySide6-Essentials==6.11.2
+faster-whisper==1.2.1
+ctranslate2==4.8.2
+argostranslate==1.11.0
+PyAudioWPatch==0.2.12.9
+soxr==1.1.0
+webrtcvad-wheels==2.0.14.post1
+numpy>=2.0
+pytest>=9
+pyinstaller>=6.0
+psutil>=7
+requests>=2.31

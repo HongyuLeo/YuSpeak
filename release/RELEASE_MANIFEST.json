@@ -1,0 +1,64 @@
+{
+  "project_name": "YuSpeak",
+  "version": "0.1.0",
+  "build_date": "2026-10-08",
+  "git_commit": null,
+  "repository_suggestion": "YuSpeak",
+  "platform": "Windows 10/11",
+  "architecture": "x64",
+  "source_archive": "YuSpeak-Source-v0.1.0.zip",
+  "portable_archive": "YuSpeak-Windows-x64-v0.1.0.zip",
+  "installer_archive": null,
+  "artifact_paths": {
+    "YuSpeak-Windows-x64-v0.1.0.zip": "YuSpeak-Windows-x64-v0.1.0.zip",
+    "YuSpeak-Source-v0.1.0.zip": "YuSpeak-Source-v0.1.0.zip"
+  },
+  "artifact_sizes": {
+    "YuSpeak-Windows-x64-v0.1.0.zip": 140650312,
+    "YuSpeak-Source-v0.1.0.zip": null
+  },
+  "artifact_sha256": {
+    "YuSpeak-Windows-x64-v0.1.0.zip": "57772dbbf101f9698edfa12f2baa701d4d782d31f14597ec7cc5bddda637b2c3",
+    "YuSpeak-Source-v0.1.0.zip": null
+  },
+  "executable_entry": "YuSpeak/YuSpeak.exe",
+  "build_status": "built_development_preview",
+  "build_environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14"
+  },
+  "tests_executed": 17,
+  "tests_passed": 17,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "gpu_verified": false,
+  "cpu_verified": false,
+  "audio_loopback_verified": true,
+  "microphone_verified": false,
+  "translation_verified": false,
+  "offline_verified": false,
+  "known_issues": [
+    "Full bilingual inference acceptance not yet completed",
+    "CUDA runtime not bundled or verified",
+    "Mic speech and game coverage unverified",
+    "10/30/60 minute soak unperformed",
+    "Advanced requested UI controls incomplete",
+    "Third-party/model redistribution audit pending"
+  ],
+  "model_dependencies": [
+    "Systran/faster-whisper-tiny/base/small/medium/large-v3",
+    "Argos translate-en_zh-1_9",
+    "Argos translate-zh_en-1_9"
+  ],
+  "required_runtime_dependencies": [
+    "Bundled Python/Qt/CTranslate2/PortAudio runtime",
+    "Optional NVIDIA CUDA 12 cuBLAS and cuDNN 9; not bundled"
+  ],
+  "release_assets": [
+    "YuSpeak-Windows-x64-v0.1.0.zip"
+  ],
+  "publication_status": "not_published_not_ready_for_stable_release",
+  "source_archive_hash_note": "Source hash is in outer manifest only; embedding its own hash is self-referential.",
+  "executable_startup_verified": true,
+  "packaged_model_inference_verified": false
+}

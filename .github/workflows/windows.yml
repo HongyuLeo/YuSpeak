@@ -1,0 +1,32 @@
+name: Windows build
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      build_portable:
+        description: 'Build binary artifact only after redistribution compliance review'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run regression tests
+        run: python -m pytest -q --junitxml=release/ci-test-results.xml
+      - name: Build portable package (explicit opt-in)
+        if: github.event_name == 'workflow_dispatch' && inputs.build_portable
+        run: .\build_windows.ps1
+        shell: pwsh
+      - uses: actions/upload-artifact@v4
+        with: {name: YuSpeak-test-results, path: release/ci-test-results.xml}
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'workflow_dispatch' && inputs.build_portable
+        with: {name: YuSpeak-Windows-x64-v0.1.0, path: release/*.zip}
