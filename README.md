@@ -1,6 +1,8 @@
 # YuSpeak
 [简体中文](README.zh-CN.md)
 
+[AI project handoff](PROJECT_HANDOFF.md)
+
 Local AI live bilingual subtitles for Windows 10/11 x64. **Development preview,
 not a fully accepted production release.** See PROJECT_STATUS.md and the handoff
 before publishing. Repository: [HongyuLeo/YuSpeak](https://github.com/HongyuLeo/YuSpeak).

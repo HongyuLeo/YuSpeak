@@ -1,6 +1,8 @@
 # YuSpeak
 [English](README.md)
 
+[AI 项目交接入口](PROJECT_HANDOFF.md)
+
 Windows 本地 AI 实时双语字幕助手。当前为开发预览版，**核心 ASR、CUDA 推理和真实双语字幕链路尚未全部验收，不应宣传为完整正式版**。
 
 仓库：[HongyuLeo/YuSpeak](https://github.com/HongyuLeo/YuSpeak)。二进制 Release 暂缓：再分发合规审计尚未完成，EXE 能启动不等于发布检查通过。
